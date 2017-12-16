@@ -1,0 +1,11 @@
+<div class="action-panel">
+    <div class="action-left">
+        <button pButton type="button" label="Home"></button>
+    </div> 
+    <div class="action-right">
+        <p-splitButton label="Menu" icon="fa-check" (onClick)="save()" [model]="items"></p-splitButton>
+        <button pButton type="button" label="Back"></button>
+        
+    </div>
+</div>
+<p-growl [value]="msgs"></p-growl>

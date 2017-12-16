@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+.ui-button-text {
+    padding: 0.40em 3.2em !important;
+}
+
+.ui-button {
+    border: 0px solid #2399e5 !important;
+    color: #FFFFFF;
+    border-radius: 0px !important;
+    background: #2399e5;
+    transition: background-color .2s;
+}
+li.ui-state-active {
+    background: #106298 !important;
+    /* color: #fff; */
+}
+/*
+.ui-state-active a {
+    color: #000000 !important;
+}*/
+
+.ui-state-active a {
+    color: #ffffff;
+}
+.ui-datatable th.ui-state-default {
+    background: #2399e7;
+    border-color: #d9d9d9;
+    color: white;
+}

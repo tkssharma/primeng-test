@@ -1,0 +1,30 @@
+<div class="panel">
+  <div class="panel-header">
+    ISP National APHT report <button type="button" pButton icon="fa-file-o" iconPos="left" label="Export" (click)="dt.exportCSV()"></button>
+  </div>
+  <p-tabView>
+    <p-tabPanel header="Broadband Plus National APHT (SIO)">
+      <p-dataTable  [value]="_reportDataTab1" [loading]="loading"  #dt exportFilename="ISP National APHT Report" [(selection)]="_selectedReportDataTab1" selectionMode="multiple" [metaKeySelection]="false">
+        <p-column field="ISP" header="ISP"></p-column>
+        <p-column field="FNN" header="FNN Number"></p-column>
+        <p-column field="HOURLY_PEAK" header="Hourly Peak Bandwidth"></p-column>
+        <p-column field="NETWORK_SIO" header="Network SIO"></p-column>
+        <p-column field="SIO_SPEED" header="SIO/Kbps"></p-column>
+        <p-column field="CURRENT_MONTH" header="Current Tier"></p-column>
+        <p-column field="LAST_MONTH" header="Last Month Tier"></p-column>
+      </p-dataTable>
+
+    </p-tabPanel>
+    <p-tabPanel header="DIVO National APHT (SIO)" [selected]="true">
+        <p-dataTable  [value]="_reportDataTab2" [loading]="loading"  #dt exportFilename="ISP National APHT Report" [(selection)]="_selectedReportDataTab2" selectionMode="multiple" [metaKeySelection]="false">
+            <p-column field="ISP" header="ISP"></p-column>
+            <p-column field="FNN" header="FNN Number"></p-column>
+            <p-column field="HOURLY_PEAK" header="Hourly Peak Bandwidth"></p-column>
+            <p-column field="NETWORK_SIO" header="Network SIO"></p-column>
+            <p-column field="SIO_SPEED" header="SIO/Kbps"></p-column>
+            <p-column field="CURRENT_MONTH" header="Current Tier"></p-column>
+            <p-column field="LAST_MONTH" header="Last Month Tier"></p-column>
+          </p-dataTable>
+    </p-tabPanel>
+  </p-tabView>
+</div>

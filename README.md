@@ -1,6 +1,16 @@
-# Myappo1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
+# App using PrimeNG Faces
+
+UI Components for Angular
+
+See [PrimeNG homepage](http://www.primefaces.org/primeng) for live showcase and documentation.
+
+![alt text](https://www.primefaces.org/primeng/assets/showcase/images/primeng-sidebar.svg "PrimeNG")
+
+
+# TestApp
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
 ## Development server
 
